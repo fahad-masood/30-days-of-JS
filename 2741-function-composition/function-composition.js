@@ -7,7 +7,6 @@ var compose = function(functions) {
         let ans = x
         for(let i = functions.length - 1; i>=0; i--){
             ans = functions[i](ans)
-            // ans = fn(ans)
         }
         return ans
     }
